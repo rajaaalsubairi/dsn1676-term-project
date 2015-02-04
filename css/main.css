@@ -23,28 +23,27 @@ body {
 
 .bg {
     background-color: darkblue;
-    background-image: linear-gradient(#0E4D87, #0C2447);
+    background-image: linear-gradient(#0E4D87, #0C2447;
+    animation: twinkling 3s linear infinite;
 }
+
 
 .bg-2 {
     position: absolute;
+    width: 100%;
     top: 2em;
     left:0;
-    animation: stars 4s linear infinite;
+    animation: stars 1s linear alternate infinite;
 }
 
 @keyframes stars {
     
     0% {
-        transform: scale(0%);
-    }
-    
-    50% { 
-        transform: scale(20%);
+        transform: scale(1,1);
     }
     
     100% {
-        transform:scale(50%);
-    }
+        transform: scale(1.2,1.2)
+
 }
     
