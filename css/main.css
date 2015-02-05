@@ -70,6 +70,33 @@ body {
 .beam:hover .lightbeam {
     opacity: .8;
 }
+
+
+.arrow {
+    width: 15%;
+    height: 15%;
+    border: 2px solid black;
+    border-radius: 50%; 
+    padding: .5em;
+    background-color: gray;
+    margin: 0 42.5%;
+    transition: all 1s ease-in-out;
+    opacity: .7;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.scroll {
+    background-color: gray;
+    opacity: .7;
+    transition: opacity 1s ease-in-out;
+}
+
+.scroll:hover {
+    opacity: 1;
+}
     
     /*.spaceship: hover,
     .spaceship: focus,
