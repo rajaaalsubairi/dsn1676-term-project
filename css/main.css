@@ -52,34 +52,58 @@ body {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    top: 5%; 
+    top: 2%; 
 }
     
 .lightbeam {
     position: absolute;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    top: 12%;
+    width: 33.3333%;
+    margin-left: 33.3333%;
+    margin-right: 33.3333%;
+    top: 8%;
     overflow: hidden;
-    opacity: 0;
-     transition: opacity 1s linear;
+    opacity: .6;
+    transition: opacity 6s ease-in-out;
 }
 
 
-.logo:target .lightbeam{
-    opacity: 1;
-    
-    .spaceship: hover,
-.spaceship: focus,
-.spaceship: active {
-    opacity: 1;
-    border-bottom: 100px solid red; 
-    border-left: 50px solid transparent;       
-    border-right: 50px solid transparent; 
-    height: 0; 
-    width: 100px;
-    
+.beam:hover .lightbeam {
+    opacity: .8;
 }
+    
+    /*.spaceship: hover,
+    .spaceship: focus,
+    .spaceship: active {
+    
+}*/
+
+
+/* @media only screen and (min-width:370px) {
+    
+    .lightbeam {
+        top: 9%;
+    }
+}
+    
+@media only screen and (min-width:500px) {
+    
+    .lightbeam {
+        top: 12%;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    
+    .lightbeam {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    
+    .lightbeam {
+        top: 20%;
+    }
+} */
     
 
