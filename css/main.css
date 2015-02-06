@@ -127,6 +127,15 @@ body {
     -webkit-animation: bounce 1s ease-in-out alternate infinite;
     font-size: 1em;
 }
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(80px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(70px);
+    }
+}
 
 @keyframes bounce {
     0% {
@@ -135,16 +144,6 @@ body {
     
     100% {
         transform: translateY(70px);
-    }
-}
-
-@-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateY(80px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(70px);
     }
 }
 
