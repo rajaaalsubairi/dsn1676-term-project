@@ -92,6 +92,7 @@ body {
     background-color: gray;
     opacity: .7;
     transition: opacity 1s ease-in-out;
+    padding: .3em;
 }
 
 .scroll:hover {
@@ -100,22 +101,45 @@ body {
 
 .title {
     position: absolute;
-    top: 4em;
+    top: 12%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
-    color: white; 
+    color: white;
+    animation: bounce 1s ease-in-out alternate infinite;
+    font-size: 1em;
 }
-    
-    /*.spaceship: hover,
-    .spaceship: focus,
-    .spaceship: active {
-    
-}*/
 
+@keyframes bounce {
+    0% {
+        transform: translateY(80px);
+    }
+    
+    100% {
+        transform: translateY(70px);
+    }
+}
 
 @media only screen and (min-width:370px) {
     
     .lightbeam {
         top: 9%;
+    }
+}
+
+.title {
+    animation: bounce 1s ease-in-out alternate infinite;
+    font-size: 2em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(80px);
+    }
+    
+    100% {
+        transform: translateY(70px);
     }
 }
     
@@ -126,10 +150,41 @@ body {
     }
 }
 
+.title {
+    animation: bounce 1s ease-in-out alternate infinite;
+    font-size: 2em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(80px);
+    }
+    
+    100% {
+        transform: translateY(70px);
+    }
+}
+
 @media only screen and (min-width:700px) {
     
     .lightbeam {
         top: 15%;
+    }
+}
+
+.title {
+    top: 2em;
+    animation: bounce 1s ease-in-out alternate infinite;
+    font-size: 2em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(80px);
+    }
+    
+    100% {
+        transform: translateY(70px);
     }
 }
 
@@ -139,5 +194,19 @@ body {
         top: 20%;
     }
 } 
+    .title {
+    top: 6em;
+    animation: bounce 1s ease-in-out alternate infinite;
+    font-size: 2em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(80px);
+    }
     
+    100% {
+        transform: translateY(70px);
+    }
+}
 
