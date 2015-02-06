@@ -38,7 +38,7 @@ body {
 @keyframes stars {
     
     0% {
-        transform: scale(1.5,1.5);
+        transform: scale(1,1);
     }
     
     100% {
@@ -52,20 +52,8 @@ body {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    top: 2%;
+    top: 2%; 
 }
-
-@keyframes updown {
-    
-    0% {
-        transform: translateY(0%);
-    }
-    
-    100% {
-        transform: translateY(100%);
-    }
-}
-    
     
 .lightbeam {
     position: absolute;
@@ -103,7 +91,6 @@ body {
 .scroll {
     background-color: gray;
     opacity: .7;
-    padding: .5em;
     transition: opacity 1s ease-in-out;
 }
 
@@ -114,7 +101,15 @@ body {
 .title {
     position: absolute;
     top: 4em;
+    text-align: center;
     color: white; 
+}
+    
+    /*.spaceship: hover,
+    .spaceship: focus,
+    .spaceship: active {
+    
+}*/
 
 
 @media only screen and (min-width:370px) {
@@ -144,3 +139,5 @@ body {
         top: 20%;
     }
 } 
+    
+
