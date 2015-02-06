@@ -80,6 +80,10 @@ body {
     -webkit-transition: opacity 3s ease-in;
 }
 
+.beam {
+    text-align: center;
+}
+
 
 .beam:hover .lightbeam {
     opacity: .6;
