@@ -33,6 +33,7 @@ body {
     top: 2em;
     left:0;
     animation: stars 25s linear alternate infinite;
+    -webkit-animation: stars 25s linear alternate infinite;
 }
 
 @keyframes stars {
@@ -101,7 +102,7 @@ body {
 
 .title {
     position: absolute;
-    top: 12%;
+    top: 1em;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
@@ -126,20 +127,21 @@ body {
     .lightbeam {
         top: 9%;
     }
-}
 
-.title {
-    animation: bounce 1s ease-in-out alternate infinite;
-    font-size: 2em;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(80px);
+    .title {
+        top: 1.3em; 
+        animation: bounce 1s ease-in-out alternate infinite;
+        font-size: 1.5em;
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(80px);
+        }
     
-    100% {
-        transform: translateY(70px);
+        100% {
+            transform: translateY(70px);
+        }
     }
 }
     
@@ -148,20 +150,22 @@ body {
     .lightbeam {
         top: 12%;
     }
-}
 
-.title {
+
+    .title {
+    top: 2em;
     animation: bounce 1s ease-in-out alternate infinite;
     font-size: 2em;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(80px);
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(80px);
+        }
     
-    100% {
-        transform: translateY(70px);
+        100% {
+            transform: translateY(70px);
+        }
     }
 }
 
@@ -170,21 +174,21 @@ body {
     .lightbeam {
         top: 15%;
     }
-}
 
-.title {
-    top: 2em;
+    .title {
+    top: 4em;
     animation: bounce 1s ease-in-out alternate infinite;
     font-size: 2em;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(80px);
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(80px);
+        }
     
-    100% {
-        transform: translateY(70px);
+        100% {
+            transform: translateY(70px);
+        }
     }
 }
 
@@ -193,20 +197,20 @@ body {
     .lightbeam {
         top: 20%;
     }
-} 
+    
     .title {
-    top: 6em;
+    top: 7em;
     animation: bounce 1s ease-in-out alternate infinite;
     font-size: 2em;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(80px);
     }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(80px);
+        }
     
-    100% {
-        transform: translateY(70px);
+        100% {
+            transform: translateY(70px);
+        }
     }
 }
-
