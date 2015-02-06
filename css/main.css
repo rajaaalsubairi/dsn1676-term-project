@@ -61,7 +61,7 @@ body {
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     width: 40%;
     left: 30%;
     top: 2%; 
@@ -76,7 +76,6 @@ body {
     overflow: hidden;
     opacity: .1;
     transition: opacity 3s ease-in;
-    -webkit-transition: opacity 3s ease-in;
 }
 
 .beam {
@@ -98,7 +97,6 @@ body {
     background-color: gray;
     margin: 0 42.5%;
     transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
     opacity: .7;
 }
 
