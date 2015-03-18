@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+    overflow-x: hidden;
  
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -24,6 +25,7 @@ body {
 .bg {
     background-color: darkblue;
     background-image: linear-gradient(#0E4D87, #0C2447);
+    overflow: hidden;
 }
 
 
@@ -83,15 +85,14 @@ body {
 
 
 .arrow {
-    width: 15%;
-    height: 15%;
-    border: 2px solid black;
+    width: 8%;
+    height: 8%;
+    border: 3px solid black;
     border-radius: 50%; 
-    padding: .5em;
-    background-color: gray;
-    margin: 0 42.5%;
+    background-color: white;
+    margin: 0 46%;
     transition: all 1s ease-in-out;
-    opacity: .7;
+    opacity: 1;
 }
 
 .arrow:hover {
@@ -99,7 +100,7 @@ body {
 }
 
 .scroll {
-    background-color: gray;
+    background-color: white;
     opacity: .7;
     transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
@@ -122,6 +123,75 @@ body {
     -webkit-animation: bounce 1s ease-in-out alternate infinite;
     font-size: 1em;
 }
+
+.gallery-title {
+    text-align: center;
+}
+
+.thumbnails {
+    margin: 0;
+    padding: 0;
+}
+
+.thumbnails li {
+    display: inline-block;
+}
+
+.thumnails a {
+    display: block;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.lightbox {
+    position: fixed;
+    left: 0;
+    right: 100%;
+    top: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.lightbox[data-state='visible']{
+    opacity: 1;
+    right: 0;
+    top: 0;
+}
+
+.lightbox-container {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
+    top: 10px;
+    background-color: rgba(14,77,135, .7);
+}
+
+.lightbox-img {
+    width: 100%;
+    display: block;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 1em;
+}
+  
+.btn-close {
+    border: none;
+    background-color: white;
+    font-size: 2em;
+}
+
 @-webkit-keyframes bounce {
     0% {
         -webkit-transform: translateY(80px);
