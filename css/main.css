@@ -114,7 +114,7 @@ body {
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     width: 40%;
     left: 30%;
     bottom: 40%;
@@ -285,7 +285,6 @@ body {
     .lightbeam {
         top: 40%;
     }
-
 
     .title {
     top: 45%;
