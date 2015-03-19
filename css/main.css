@@ -143,9 +143,24 @@ body {
     background-color: white;*/
     margin: 0 46%;
     animation: arrow 800ms linear infinite;
+    -webkit-animation: arrow 800ms linear infinite;
 }
 
 @keyframes arrow {
+    0% {
+        transform: translateY(3px);
+    }
+    
+    50% {
+        transform: translateY(7px);
+    }
+    
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@-webkit-keyframes arrow {
     0% {
         transform: translateY(3px);
     }
@@ -276,7 +291,6 @@ body {
     top: 45%;
     font-size: 6em;
     }
-
 }
 
 @media only screen and (min-width:700px) {
@@ -301,5 +315,4 @@ body {
     top: 55%;
     font-size: 12em;
     }
-
 }

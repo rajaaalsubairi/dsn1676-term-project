@@ -19,5 +19,4 @@ $btnClose.on('click', function() {
 
 $toggle.on('click', function() {
     $nav.slideToggle();
-    
 });
