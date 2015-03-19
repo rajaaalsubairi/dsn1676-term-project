@@ -22,17 +22,33 @@ body {
     margin: 0;
 }
 
+.nav {
+    background-color: black;
+    z-index: 2;
+}
+
+.nav ul {
+    display: inline-block;
+}
+
+.nav li {
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+}
+
 .bg {
     background-color: darkblue;
     background-image: linear-gradient(#0E4D87, #0C2447);
     overflow: hidden;
+    position: relative;
 }
 
 
 .bg-2 {
     position: absolute;
     width: 100%;
-    top: 2em;
+    top: 5em;
     left:0;
     animation: stars 25s linear alternate infinite;
     -webkit-animation: stars 25s linear alternate infinite;
@@ -62,18 +78,53 @@ body {
 
 }
 
+.toggle {
+    width: 2em;
+    float: right;
+    margin: .5em;
+}
+
+.nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    float: none;
+    color: darkblue;
+}
+
+.nav {
+    background-color: white;
+    display: none;
+}
+
+.nav ul {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: .5em 0;
+    margin: 0;
+}
+
+.nav li:hover {
+    background-color: yellow;
+}
+
+.nav a{
+    height: 1em;
+    font-size: 1.3em;
+}
+
 .logo {
-    position: absolute;
+    position: relative;
     width: 40%;
     left: 30%;
-    top: 2%; 
+    bottom: 40%;
 }
     
 .lightbeam {
     position: absolute;
     width: 25%;
     left: 37.5%;
-    top: 10%;
+    top: 35%;
     overflow: hidden;
     opacity: .1;
     transition: opacity 3s ease-in;
@@ -87,17 +138,27 @@ body {
 .arrow {
     width: 8%;
     height: 8%;
-    border: 3px solid black;
+    /*border: 3px solid black;
     border-radius: 50%; 
-    background-color: white;
+    background-color: white;*/
     margin: 0 46%;
-    transition: all 1s ease-in-out;
-    opacity: 1;
+    animation: arrow 800ms linear infinite;
 }
 
-.arrow:hover {
-    opacity: 1;
+@keyframes arrow {
+    0% {
+        transform: translateY(3px);
+    }
+    
+    50% {
+        transform: translateY(7px);
+    }
+    
+    100% {
+        transform: translateY(3px);
+    }
 }
+
 
 .scroll {
     background-color: white;
@@ -113,15 +174,13 @@ body {
 
 .title {
     position: absolute;
-    top: 1em;
+    top: 50%;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
     color: white;
-    animation: bounce 1s ease-in-out alternate infinite;
-    -webkit-animation: bounce 1s ease-in-out alternate infinite;
-    font-size: 1em;
+    font-size: 4em;
 }
 
 .gallery-title {
@@ -192,159 +251,55 @@ body {
     font-size: 2em;
 }
 
-@-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateY(80px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(70px);
-    }
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(80px);
-    }
-    
-    100% {
-        transform: translateY(70px);
-    }
-}
 
 @media only screen and (min-width:370px) {
     
     .lightbeam {
-        top: 9%;
+        top: 35%;
     }
 
     .title {
-        top: 1.3em; 
-        animation: bounce 1s ease-in-out alternate infinite;
-        -webkit-animation: bounce 1s ease-in-out alternate infinite;
-        font-size: 1.5em;
-    }
-
-    @keyframes bounce {
-        0% {
-            transform: translateY(80px);
-        }
-    
-        100% {
-            transform: translateY(70px);
-        }
-    }
-    
-    @-webkit-keyframes bounce {
-        0% {
-            -webkit-transform: translateY(80px);
-        }
-    
-        100% {
-            -webkit-transform: translateY(70px);
-        }
+    top: 45%;
+    font-size: 5em;
+    text-align: center;
     }
 }
     
 @media only screen and (min-width:500px) {
     
     .lightbeam {
-        top: 12%;
+        top: 40%;
     }
 
 
     .title {
-    top: 2em;
-    animation: bounce 1s ease-in-out alternate infinite;
-    -webkit-animation: bounce 1s ease-in-out alternate infinite;
-    font-size: 2em;
+    top: 45%;
+    font-size: 6em;
     }
 
-    @keyframes bounce {
-        0% {
-            transform: translateY(80px);
-        }
-    
-        100% {
-            transform: translateY(70px);
-        }
-    }
-    
-    @-webkit-keyframes bounce {
-        0% {
-            -webkit-transform: translateY(80px);
-        }
-    
-        100% {
-            -webkit-transform: translateY(70px);
-        }
-    }
 }
 
 @media only screen and (min-width:700px) {
     
     .lightbeam {
-        top: 15%;
+        top: 45%;
     }
 
     .title {
-    top: 4em;
-    animation: bounce 1s ease-in-out alternate infinite;
-    -webkit-animation: bounce 1s ease-in-out alternate infinite;
-    font-size: 2em;
-    }
-
-    @keyframes bounce {
-        0% {
-            transform: translateY(80px);
-        }
-    
-        100% {
-            transform: translateY(70px);
-        }
-    }
-    
-    @-webkit-keyframes bounce {
-        0% {
-            -webkit-transform: translateY(80px);
-        }
-    
-        100% {
-            -webkit-transform: translateY(70px);
-        }
+    top: 50%;
+    font-size: 9em;
     }
 }
 
 @media only screen and (min-width:1000px) {
     
     .lightbeam {
-        top: 20%;
+        top: 45%;
     }
     
     .title {
-    top: 7em;
-    animation: bounce 1s ease-in-out alternate infinite;
-    -webkit-animation: bounce 1s ease-in-out alternate infinite;
-    font-size: 2em;
+    top: 55%;
+    font-size: 12em;
     }
 
-    @-webkit-keyframes bounce {
-        0% {
-            -webkit-transform: translateY(80px);
-        }
-    
-        100% {
-            -webkit-transform: translateY(70px);
-        }
-    }
-    
-      @keyframes bounce {
-        0% {
-            transform: translateY(80px);
-        }
-    
-        100% {
-            transform: translateY(70px);
-        }
-    }
 }

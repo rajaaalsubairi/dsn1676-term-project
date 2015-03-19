@@ -3,6 +3,9 @@ var $lightboximg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose =$('.btn-close');
 
+var $toggle = $('.toggle');
+var $nav = $('.nav');
+
 $thumbs.on('click','a', function(e) {
     e.preventDefault();
     var big = $(this).attr('href');
@@ -12,4 +15,9 @@ $thumbs.on('click','a', function(e) {
 
 $btnClose.on('click', function() {
      $lb.attr('data-state', 'hidden');
+});
+
+$toggle.on('click', function() {
+    $nav.slideToggle();
+    
 });
