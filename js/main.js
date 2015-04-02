@@ -21,4 +21,10 @@ $toggle.on('click', function() {
     $nav.slideToggle();
 });
 
-$('.nav').localscroll();
+$('.nav').localScroll({
+    target:'body'
+});
+
+$('.arrow').localScroll({
+    target:'body'
+});
