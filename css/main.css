@@ -179,7 +179,7 @@ body {
     background-color: white;
     opacity: .7;
     transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     padding: .3em;
 }
 
@@ -227,7 +227,7 @@ body {
     bottom: 0;
     background-color: rgba(0,0,0,.4);
     opacity: 0;
-    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
     transition: all 200ms ease-out;
 }
 
