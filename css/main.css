@@ -228,7 +228,6 @@ body {
     background-color: rgba(0,0,0,.4);
     opacity: 0;
     transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
 }
 
 .lightbox[data-state='visible']{
@@ -267,6 +266,116 @@ body {
     font-size: 2em;
 }
 
+#alien {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#body {
+    animation: bounce 1000ms linear infinite;
+    -webkit-animation: bounce 1000ms linear infinite;
+}
+
+@keyframes bounce {
+    
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(10px);
+    }
+}
+
+#eyes {
+    animation: bounce 1000ms linear infinite;
+    -webkit-animation: bounce 1000ms linear infinite;
+}
+
+@keyframes bounce {
+    
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(10px);
+    }
+}
+
+#mouth {
+    animation: bounce 1000ms linear infinite;
+    -webkit-animation: bounce 1000ms linear infinite;
+}
+
+@keyframes bounce {
+    
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(10px);
+    }
+}
 
 @media only screen and (min-width:370px) {
     
