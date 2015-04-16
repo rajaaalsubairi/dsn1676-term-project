@@ -273,26 +273,9 @@ body {
     margin-bottom: 40em;
 }
 
-
-
-.js-active #body {
-    animation: bounce 1000ms linear 3;
-    -webkit-animation: bounce 1000ms linear 3;
-}
-
-@keyframes bounce {
-    
-    0% {
-        transform: translateY(10px);
-    }
-    
-    50% {
-        transform: translateY(30px);
-    }
-    
-    100% {
-        transform: translateY(10px);
-    }
+#body {
+    -webkit-animation: bounce 1000ms linear infinite;
+    animation: bounce 1000ms linear infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -310,9 +293,40 @@ body {
     }
 }
 
-.js-active #eyes {
-    animation: bounce 1000ms linear 3;
-    -webkit-animation: bounce 1000ms linear 3;
+
+@keyframes bounce {
+    
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#eyes {
+    animation: bounce 1000ms linear infinite;
+    -webkit-animation: bounce 1000ms linear infinite;
+}
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(10px);
+    }
 }
 
 @keyframes bounce {
@@ -330,55 +344,14 @@ body {
     }
 }
 
-@-webkit-keyframes bounce {
-    
-    0% {
-        -webkit-transform: translateY(10px);
-    }
-    
-    50% {
-        -webkit-transform: translateY(30px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(10px);
-    }
+#mouth {
+    opacity: 0;
 }
 
 .js-active #mouth {
-    animation: bounce 1000ms linear 3;
-    -webkit-animation: bounce 1000ms linear 3;
+    opacity: 1;
 }
 
-@keyframes bounce {
-    
-    0% {
-        transform: translateY(10px);
-    }
-    
-    50% {
-        transform: translateY(30px);
-    }
-    
-    100% {
-        transform: translateY(10px);
-    }
-}
-
-@-webkit-keyframes bounce {
-    
-    0% {
-        -webkit-transform: translateY(10px);
-    }
-    
-    50% {
-        -webkit-transform: translateY(30px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(10px);
-    }
-}
 
 @media only screen and (min-width:370px) {
     

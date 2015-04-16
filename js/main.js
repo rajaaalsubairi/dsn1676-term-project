@@ -6,7 +6,7 @@ var $btnClose =$('.btn-close');
 var $toggle = $('.toggle');
 var $nav = $('.nav');
 
-var $alien = $('.alien');
+var $mouth = $('.alien');
 
 
 $thumbs.on('click','a', function(e) {
@@ -24,9 +24,9 @@ $toggle.on('click', function () {
     $nav.slideToggle();
 });
 
-$alien.waypoint(function () {
-    $alien.toggleClass('js-active');
-}, {offset: '50%'});
+$mouth.waypoint(function () {
+    $mouth.toggleClass('js-active');
+}, { offset: '70%' });
 
 $('.nav').localScroll({
     target: 'body'
