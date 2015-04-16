@@ -270,46 +270,14 @@ body {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 40em;
 }
 
-#body {
-    animation: bounce 1000ms linear infinite;
-    -webkit-animation: bounce 1000ms linear infinite;
-}
 
-@keyframes bounce {
-    
-    0% {
-        transform: translateY(10px);
-    }
-    
-    50% {
-        transform: translateY(30px);
-    }
-    
-    100% {
-        transform: translateY(10px);
-    }
-}
 
-@-webkit-keyframes bounce {
-    
-    0% {
-        -webkit-transform: translateY(10px);
-    }
-    
-    50% {
-        -webkit-transform: translateY(30px);
-    }
-    
-    100% {
-        -webkit-transform: translateY(10px);
-    }
-}
-
-#eyes {
-    animation: bounce 1000ms linear infinite;
-    -webkit-animation: bounce 1000ms linear infinite;
+.js-active #body {
+    animation: bounce 1000ms linear 3;
+    -webkit-animation: bounce 1000ms linear 3;
 }
 
 @keyframes bounce {
@@ -342,9 +310,44 @@ body {
     }
 }
 
-#mouth {
-    animation: bounce 1000ms linear infinite;
-    -webkit-animation: bounce 1000ms linear infinite;
+.js-active #eyes {
+    animation: bounce 1000ms linear 3;
+    -webkit-animation: bounce 1000ms linear 3;
+}
+
+@keyframes bounce {
+    
+    0% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(30px);
+    }
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(10px);
+    }
+}
+
+.js-active #mouth {
+    animation: bounce 1000ms linear 3;
+    -webkit-animation: bounce 1000ms linear 3;
 }
 
 @keyframes bounce {
