@@ -26,7 +26,7 @@ $toggle.on('click', function () {
 
 $mouth.waypoint(function () {
     $mouth.toggleClass('js-active');
-}, { offset: '70%' });
+}, { offset: '50%' });
 
 $('.nav').localScroll({
     target: 'body'
