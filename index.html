@@ -11,6 +11,12 @@
 </head>
 <body>
     
+     <ul class="skip-links">
+        <li><a href="#main">Skip to main content</a></li>
+        <li><a href="#navigation">Skip to navigation</a></li>
+    </ul>
+    
+  <main role="main" id="main">
    <div class="grid">
         <div class="unit unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2">  
             <div></div> 
@@ -27,7 +33,7 @@
         <ul>
             <li><a href="#gal">Gallery</a></li>
             
-            <li><a href="stories">Stories</a></li>
+            <li><a href="#stor">Stories</a></li>
         </ul>
     </div>
     
@@ -140,19 +146,40 @@
                 <circle fill="#FFFFFF" cx="255.9" cy="46.8" r="5.1"/>
             </g>
         </svg>
-    </section>    
+    </section> 
+      
+      <article class="stories" id="stor">
+          <h2>ROSWELL, 1947</h2>
+          <p>Ranking as one of the most famous UFO incidents in history - and now a pop culture phenomenon - the Roswell incident saw UFO hunters claim that the US military had captured an alien aircraft. While the military maintain that the 'flying saucer' was actually a surveillance device from a classified operation, non-believers still cite extra-terrestrial activity to this day.</p>
+          
+          <h2>KENNETH ARNOLD CASE, 1947</h2>
+          <p>Newspapers had a field day with Kenneth Arnold's story, even coining the term 'flying saucer', after the American businessman and pilot claimed he'd seen nine saucer-like objects flying in a chain near Mount Rainier in Washington.</p>
+          
+          <h2>WASHINGTON, D.C. SIGHTING, 1952</h2>
+          <p>The CIA Robertson Panel was formed after reports of UFOs appearing in the skies above Washington were convincingly backed up by mysterious radar contacts at three separate airports. However, the US Air Force allayed fears of an alien invasion, suggesting that changes in the temperature had caused radar signals to bend and give false returns.</p>
+      </article>
     
      <div class="arrow unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1"> 
             <a href="#bill" class="scroll"><img class="arrows" src="img/up-arrow.svg" alt="arrow">
             </a>
          </div>
                 
+      <footer role="contentinfo" class="grid footer">
+        <nav class="unit unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+            <ul class="navs"> 
+                <li><a href="#gal">Gallery</a></li>
+                <li><a href="#stor">Stories</a></li>
+            </ul>
+        </nav>
+    </footer>
+      
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
   <script src="js/main.js"></script>
+      </main>
     
 </body>
 </html>

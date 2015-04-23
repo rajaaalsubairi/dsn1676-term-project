@@ -22,6 +22,26 @@ body {
     margin: 0;
 }
 
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: #fff;
+    color: #48459C;
+    text-decoration: none;
+    padding: 0.35em 0.5em;
+    font-size: 1.25em;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
 .nav {
     background-color: black;
     z-index: 2;
@@ -36,6 +56,7 @@ body {
     text-decoration: none;
     display: block;
 }
+
 
 .bg {
     background-color: darkblue;
@@ -104,14 +125,74 @@ body {
     margin: 0;
 }
 
-.nav li:hover {
+.nav li:hover,
+.nav li:focus,
+.nav li:active,{
     background-color: yellow;
 }
 
-.nav a{
+.nav a,
+.nav a:linked,
+.nav a:visted{
     height: 1em;
     font-size: 1.3em;
 }
+
+.navs ul{
+    list-style-type: none;
+    margin: 2em;
+    padding: 0;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}    
+
+.navs li{
+    list-style-type: none;
+    margin: 0;
+    padding: .5em;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.navs a,
+.navs a:linked,
+.navs a:visted{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+    
+.navs li:hover,
+.navs li:focus,
+.navs li:active,
+.navs .nav-current:link,
+.navs .nav-current:visited{
+    color: #53ADE1;
+    background-color: #fff;
+    padding: .5em;
+}
+
+.navs {
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0;
+    float: right;
+    margin-top: 3em;
+}
+
+.navs a {
+    text-decoration: none;
+    color: #0E4D87;
+    font-family: "lato",sans-serif;
+    overflow: hidden;
+    font-size: 1em;
+    padding: 0;
+}
+
 
 .logo {
     position: absolute;
@@ -183,7 +264,9 @@ body {
     padding: .3em;
 }
 
-.scroll:hover {
+.scroll:hover,
+.scroll:focus,
+.scroll:active,{
     opacity: 1;
 }
 
@@ -270,7 +353,6 @@ body {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    margin-bottom: 40em;
 }
 
 #body {
@@ -353,6 +435,9 @@ body {
 }
 
 
+.stories {
+    margin: 0 2em 0;
+}
 @media only screen and (min-width:370px) {
     
     .lightbeam {
